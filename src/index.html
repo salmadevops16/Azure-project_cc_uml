@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="SS Cloud Kitchen - a warm neighborhood cloud kitchen serving fresh bowls, wraps, plates, and sweets."
+    />
+    <title>SS Cloud Kitchen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <div class="brand" aria-label="SS Cloud Kitchen home">
+          <div class="brand-mark">S</div>
+          <div class="brand-copy">
+            <span class="brand-name">SS Cloud Kitchen</span>
+            <span class="brand-tag">NEIGHBORHOOD KITCHEN</span>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#menu">Menu</a>
+          <a href="#about">About</a>
+          <a href="#story">Story</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="nav-cta" type="button">Order now</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">FRESH • HOT • HOMEMADE</p>
+            <h1>Cloud kitchen comfort, served with heart.</h1>
+            <p class="subtitle">
+              Curated bowls, wraps, plates, and desserts made fresh daily for busy city life.
+              Big flavor, clean ingredients, and a warm neighborhood feel.
+            </p>
+
+            <div class="hero-actions">
+              <a class="primary-btn" href="#menu">Explore menu</a>
+              <a class="secondary-btn" href="#about">Our story</a>
+            </div>
+
+            <div class="hero-meta">
+              <span>Made fresh daily</span>
+              <span>Pickup & delivery</span>
+              <span>15–25 min</span>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Featured dish imagery">
+            <div class="visual-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80"
+                alt="Fresh healthy bowl"
+              />
+            </div>
+            <div class="floating-card">
+              <span class="dot"></span>
+              <div>
+                <strong>Chef special</strong>
+                <small>Today’s favorite bowl</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="highlights">
+        <div class="container highlight-grid">
+          <article>
+            <strong>4.9/5</strong>
+            <span>Guest rating</span>
+          </article>
+          <article>
+            <strong>30 min</strong>
+            <span>Average prep</span>
+          </article>
+          <article>
+            <strong>100%</strong>
+            <span>Fresh ingredients</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="menu-section" id="menu">
+        <div class="container section-intro">
+          <div>
+            <p class="section-label">THE MENU</p>
+            <h2>Good food for your everyday routine.</h2>
+          </div>
+          <span class="chip">Freshly cooked today</span>
+        </div>
+
+        <div class="container menu-layout">
+          <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+
+          <aside class="cart-panel" aria-live="polite">
+            <div class="cart-header">
+              <div>
+                <p class="section-label mini">YOUR BAG</p>
+                <h3>Order summary</h3>
+              </div>
+              <span id="cartCount" class="cart-count">0 items</span>
+            </div>
+
+            <div id="cartItems" class="cart-items empty-state">
+              <p>Your cart is empty.</p>
+              <small>Add a favorite from the menu.</small>
+            </div>
+
+            <div class="cart-total-row">
+              <span>Subtotal</span>
+              <strong id="cartTotal">$0.00</strong>
+            </div>
+
+            <button class="checkout-btn" id="checkoutButton" type="button">Checkout</button>
+            <p class="order-result" id="orderResult" role="status" hidden></p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="story" id="story">
+        <div class="container story-grid">
+          <div class="story-copy">
+            <p class="section-label">OUR KITCHEN</p>
+            <h2>Seasonal comfort food from a neighborhood point of view.</h2>
+            <p>
+              SS Cloud Kitchen brings together warm flavors, easy meal prep, and colorful plates
+              inspired by everyday home cooking. We focus on dishes that feel familiar, nourishing,
+              and beautifully simple.
+            </p>
+          </div>
+
+          <div class="story-cards">
+            <article>
+              <strong>Small-batch</strong>
+              <p>Prepared in limited runs for freshness and consistency.</p>
+            </article>
+            <article>
+              <strong>Flavor-forward</strong>
+              <p>Balanced spice, herbs, and vibrant textures in every dish.</p>
+            </article>
+            <article>
+              <strong>Pickup-first</strong>
+              <p>Made for quick meals, busy days, and craving-worthy comfort.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container about-grid">
+          <div class="about-card feature-box">
+            <p class="section-label">WHY PEOPLE LOVE US</p>
+            <h3>Fast, flavorful, and genuinely welcoming.</h3>
+            <ul>
+              <li>Fresh meals prepared after each order</li>
+              <li>Vegetarian-friendly ingredients</li>
+              <li>Easy pickup or delivery scheduling</li>
+            </ul>
+          </div>
+
+          <div class="about-card info-box" id="contact">
+            <p class="section-label">CONTACT</p>
+            <h3>Let’s make your lunch plan easy.</h3>
+            <div class="contact-info">
+              <span>📞 (415) 555-0188</span>
+              <span>✉️ sonysalma998@gmail.com</span>
+              <span>🕒 Tue–Sun • 11:00 AM – 9:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <span>© 2026 SS Cloud Kitchen</span>
+        <span>Fresh meals for your table.</span>
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
